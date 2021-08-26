@@ -79,4 +79,63 @@
 #         print("*", end=" ")
 #     print("")
 
-# 8.
+# 8.使用while循环实现99乘法表的打印
+# a = 0
+# while a < 9:
+#     a += 1
+#     b = 0
+#     while b < a:
+#         b += 1
+#         c = a * b
+#         print(str(b),"*",str(a),"=",str(c)," ",end="")
+#     print("")
+
+# 9.实现99乘法表的倒叙打印
+# b = 10
+# a = 0
+# while b > 0:
+#     a = 0
+#     b -= 1
+#     while a < b:
+#         a += 1
+#         c = a * b
+#         print(str(a),"*",str(b),"=",str(c)," ",end="")
+#     print("")
+
+# # 10.一只青蛙掉在井里了，井高20米，青蛙白天往上爬3米，晚上下滑2米，问第几天能出来？
+# h = 20
+# n = 0
+# while 1:
+#     h -= 3
+#     n += 1
+#     if h == 0:
+#         print ("第",n,"天出来")
+#         break
+#     else:
+#         h += 2
+
+# 11.判断下列变量命名是否合法
+# while 1:
+#     n = input("请输入变量名：")
+#     if n[0].isalpha() or n[0] == "_":
+#         for i in n[1:]:
+#             if not(i.isalnum()) or not(i.isalpha) or i == "_":
+#                 print ("变量名不合法")
+#                 break
+#         else:
+#             print ("变量名合法")
+#     else:
+#         print("变量名不合法")
+
+# 13.用循环来实现20以内的数的阶乘。
+# num = int(input("请输入一个正整数："))
+# total = 0
+# a = []
+# for i in range(0,num):
+#     import math
+#     i += 1
+#     value = math.factorial(i)
+#     a.append(value)
+# print(i,"的阶乘=",value)
+# total = round(sum(a),0)
+# print("总和为",total)
