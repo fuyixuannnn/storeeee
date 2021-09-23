@@ -11,7 +11,7 @@
 class person:
     __age = 0
     __gender = ""
-    name = ""
+    __name = ""
 
     def set_age(self, age):
         if age >= 0:
@@ -29,21 +29,25 @@ class person:
     def get_gender(self):
         return self.__gender
 
+    def set_name(self, name):
+        self.__name = name
+    def get_name(self):
+        return self.__name
+
 class worker(person):
     def work(self, work):
-        print(p.name, "正在干活，今天的任务是", work)
+        print(p.get_name(), "正在干活，今天的任务是", work)
 
 class student(person):
     num = ""
-
     def study(self, subject):
-        print(p.name, "正在学习", subject)
+        print(p.get_name(), "正在学习", subject)
 
     def sing(self, songname):
-        print(p.name, "正在唱", songname)
+        print(p.get_name(), "正在唱", songname)
 
 p = person()
-p.name = "小李子"
+p.set_name("小李子")
 p.set_gender("男")
 p.set_age(88)
 w = worker()
