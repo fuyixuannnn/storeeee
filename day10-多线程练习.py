@@ -23,7 +23,6 @@ class baker(Thread):
                 amount = amount + 1
                 print("现在还剩", amount, "个蛋挞在篮子里。")
             elif amount >= 500 and money > 0:
-                amount = 500
                 time.sleep(3)
             elif money == 0:
                 print(self.name, "此次共制作", self.bake, "个蛋挞!")
@@ -42,7 +41,6 @@ class customer(Thread):
                 money = money - 2
                 print("还有", amount, "个蛋挞，", money, "元。")
             elif amount <= 0 and money > 0:
-                amount = 0
                 time.sleep(2)
             elif money == 0:
                 print(self.name, "买了", self.buy, "个蛋挞!")
